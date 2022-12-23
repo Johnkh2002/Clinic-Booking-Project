@@ -13,7 +13,7 @@ def login_user(request):
         if user is not None:
             login(request, user)
             # Redirect to a success page.
-            return redirect('store')
+            return redirect('index')
         else:
             # Return an 'invalid login' error message.
             ...
