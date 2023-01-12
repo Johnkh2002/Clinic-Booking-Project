@@ -4,15 +4,6 @@
 {% block body %}
 
 
-{% if messages %}
-{% for message in messages %}
-    <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
-        <h3 class="display-3">{{ message }}</h3>
-        <button type="button" class="btn-close fs-1 position-absolute top-50 start-0 translate-middle-y" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-{% endfor %}
-{% endif %}
-
 {% if user.is_authenticated %}
 <h1 class="p-2 text-center mb-5 text-warning">You Are Already Signed In</h1>
 
